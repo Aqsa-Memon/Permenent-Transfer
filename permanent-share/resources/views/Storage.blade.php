@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Acorn Admin Template | Storage Folder')
-@section('description', 'Service Provider Storage Folder')
+@section('title', 'Acorn Admin Template | Storage')
+@section('description', 'Service Provider Storage')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/vendor/baguetteBox.min.css') }}" />
@@ -14,26 +14,17 @@
   <div class="row">
     <!-- Title Start -->
     <div class="col mb-2">
-      <h1 class="mb-2 pb-0 display-4" id="title">
-        <a href="#" class="alternate-link">Storage \</a>
-        Products
-      </h1>
+      <h1 class="mb-2 pb-0 display-4" id="title">Storage</h1>
       <div class="text-muted font-heading text-small">Let us manage the database engines for your applications so you can focus on building.</div>
     </div>
     <!-- Title End -->
 
     <!-- Top Buttons Start -->
     <div class="col-12 col-sm-auto d-flex align-items-center justify-content-end">
-      <!-- Up Directory Button Start -->
-      <a href="{{ route('services.storage') }}" class="btn btn-outline-primary btn-icon btn-icon-only">
-        <i data-acorn-icon="arrow-top-left"></i>
-      </a>
-      <!-- Up Directory Button End -->
-
       <!-- New Folder Button Start -->
       <button
         type="button"
-        class="btn btn-outline-primary btn-icon btn-icon-only ms-1"
+        class="btn btn-outline-primary btn-icon btn-icon-only"
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
         aria-haspopup="true"
@@ -187,19 +178,49 @@
 
     <div id="checkboxTable" class="mb-5">
       <div class="mb-n2">
+        <!-- Folder 1 -->
         <div class="card mb-2">
           <div class="row g-0 sh-14 sh-md-6">
             <div class="col">
               <div class="card-body pt-0 pb-0 px-4 h-100">
                 <div class="row g-0 h-100 align-content-center">
                   <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_342.webp</span>
+                    <a href="{{ route('services.storage.folder') }}" class="stretched-link body-link">
+                      <i data-acorn-icon="folder" class="me-2 text-alternate" data-acorn-size="17"></i>
+                      <span class="align-middle">Products</span>
                     </a>
                   </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center mb-md-0 order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">238.5 KB</div>
+                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
+                    <div class="text-alternate">—</div>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
+                    <div class="text-alternate">13.04.2021</div>
+                  </div>
+                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
+                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
+                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Folder 2 -->
+        <div class="card mb-2">
+          <div class="row g-0 sh-14 sh-md-6">
+            <div class="col">
+              <div class="card-body pt-0 pb-0 px-4 h-100">
+                <div class="row g-0 h-100 align-content-center">
+                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
+                    <a href="{{ route('services.storage.folder') }}" class="stretched-link body-link">
+                      <i data-acorn-icon="folder" class="me-2 text-alternate" data-acorn-size="17"></i>
+                      <span class="align-middle">Uploads</span>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
+                    <div class="text-alternate">—</div>
                   </div>
                   <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
                     <div class="text-alternate">12.04.2021</div>
@@ -214,6 +235,38 @@
             </div>
           </div>
         </div>
+
+        <!-- Folder 3 -->
+        <div class="card mb-2">
+          <div class="row g-0 sh-14 sh-md-6">
+            <div class="col">
+              <div class="card-body pt-0 pb-0 px-4 h-100">
+                <div class="row g-0 h-100 align-content-center">
+                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
+                    <a href="{{ route('services.storage.folder') }}" class="stretched-link body-link">
+                      <i data-acorn-icon="folder" class="me-2 text-alternate" data-acorn-size="17"></i>
+                      <span class="align-middle">Users</span>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
+                    <div class="text-alternate">—</div>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
+                    <div class="text-alternate">12.04.2021</div>
+                  </div>
+                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
+                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
+                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Files -->
+        @for($i = 4239; $i <= 4244; $i++)
         <div class="card mb-2">
           <div class="row g-0 sh-14 sh-md-6">
             <div class="col">
@@ -222,14 +275,14 @@
                   <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
                     <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
                       <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_341.webp</span>
+                      <span class="align-middle">234523_{{ $i }}.webp</span>
                     </a>
                   </div>
                   <div class="col-12 col-md-2 d-flex flex-column justify-content-center mb-md-0 order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">423.5 KB</div>
+                    <div class="text-alternate">{{ rand(150, 450) }}.{{ rand(0, 9) }} KB</div>
                   </div>
                   <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">11.04.2021</div>
+                    <div class="text-alternate">{{ sprintf('%02d', rand(1, 13)) }}.04.2021</div>
                   </div>
                   <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
                     <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
@@ -241,225 +294,11 @@
             </div>
           </div>
         </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_340.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center mb-md-0 order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">351.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">09.04.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_339.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">154.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">05.04.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_338.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">442.3 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">03.04.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_337.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">322.7 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">01.04.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_336.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">258.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">22.03.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_335.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">258.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">22.03.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_334.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">258.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">22.03.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-2">
-          <div class="row g-0 sh-14 sh-md-6">
-            <div class="col">
-              <div class="card-body pt-0 pb-0 px-4 h-100">
-                <div class="row g-0 h-100 align-content-center">
-                  <div class="col-11 col-md-6 d-flex flex-column justify-content-center mb-1 mb-md-0 h-md-100 position-relative">
-                    <a href="#" class="stretched-link body-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-focus="false">
-                      <i data-acorn-icon="image" class="me-2 text-alternate" data-acorn-size="17"></i>
-                      <span class="align-middle">product_23452_333.webp</span>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-2 d-flex flex-column justify-content-center order-4 ms-5 ms-md-0">
-                    <div class="text-alternate">258.0 KB</div>
-                  </div>
-                  <div class="col-12 col-md-3 d-flex flex-column justify-content-center order-3 ms-5 ms-md-0">
-                    <div class="text-alternate">22.03.2021</div>
-                  </div>
-                  <div class="col-1 col-md-1 d-flex flex-column justify-content-center order-2 order-md-last">
-                    <div class="form-check d-flex flex-column justify-content-center align-items-end mb-0 pe-none">
-                      <input type="checkbox" class="form-check-input ms-n2 mt-n3 ms-md-0 mt-md-0 me-0" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        @endfor
       </div>
     </div>
 
+    <!-- Pagination -->
     <div class="w-100 d-flex justify-content-center">
       <ul class="pagination">
         <li class="page-item prev disabled">
@@ -494,9 +333,9 @@
       </div>
       <div class="modal-body">
         <a href="{{ asset('img/product/large/product-1.webp') }}" class="lightbox">
-          <img src="{{ asset('img/product/large/product-1.webp') }}" class="img-fluid rounded-md mb-4" alt="boule" />
+          <img src="{{ asset('img/product/small/product-1.webp') }}" class="img-fluid rounded-md mb-4" alt="cornbread" />
         </a>
-        <div class="mb-4">
+        <div class="mb-3">
           <div class="text-small text-muted">TITLE</div>
           <div>234523_4239.webp</div>
         </div>
@@ -522,7 +361,7 @@
         </div>
       </div>
       <div class="modal-footer border-0">
-        <a
+        
           href="#"
           class="btn btn-icon btn-icon-only btn-outline-primary"
           data-delay='{"show":"500", "hide":"0"}'
@@ -533,7 +372,7 @@
         >
           <i data-acorn-icon="bin"></i>
         </a>
-        <a
+        
           href="#"
           class="btn btn-icon btn-icon-only btn-outline-primary"
           data-delay='{"show":"500", "hide":"0"}'

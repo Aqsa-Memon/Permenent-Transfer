@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Acorn Admin Template | Home')
-@section('description', 'Service Provider Home')
+@section('title', 'Acorn Admin Template | Getting Started')
+@section('description', 'Service Provider Getting Started')
 
 @section('content')
 <!-- Title and Top Buttons Start -->
 <div class="page-title-container mb-3">
   <div class="row">
     <div class="col mb-2">
-      <h1 class="mb-2 pb-0 display-4" id="title">Welcome</h1>
-      <div class="text-muted font-heading text-small">Your cloud service dashboard</div>
+      <h1 class="mb-2 pb-0 display-4" id="title">Getting Started</h1>
+      <div class="text-muted font-heading text-small">Let us manage the database engines for your applications so you can focus on building.</div>
     </div>
   </div>
 </div>
@@ -26,7 +26,7 @@
           <div class="w-50 text-alternate">Lollipop chocolate marzipan marshmallow gummi bears. Tootsie roll liquorice cake jelly beans.</div>
         </div>
         <div>
-          <a href="{{ route('dashboard.getting.started') }}" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
+          <a href="{{ route('home') }}" class="btn btn-icon btn-icon-start btn-primary mt-3 stretched-link">
             <i data-acorn-icon="chevron-right"></i>
             <span>Getting Started</span>
           </a>
@@ -141,7 +141,7 @@
   <!-- Introduction List End -->
 </div>
 
-<!-- Guides Start -->
+<!-- Guildes Start -->
 <div class="mb-5">
   <h2 class="small-title">Guides</h2>
   <div class="row g-2 row-cols-1 row-cols-xl-2 row-cols-xxl-4">
@@ -199,7 +199,7 @@
     </div>
   </div>
 </div>
-<!-- Guides End -->
+<!-- Guildes End -->
 
 <div class="row mb-n5">
   <!-- Help Start -->
@@ -287,7 +287,7 @@
       </div>
       <div class="col-12 col-lg-6">
         <div class="card">
-          <a href="{{ route('blog') }}" class="row g-0 sh-11">
+          <a href="{{ route('home') }}" class="row g-0 sh-11">
             <div class="col-auto h-100">
               <img src="{{ asset('img/video/video-thumbnail-4.webp') }}" alt="alternate text" class="card-img card-img-horizontal sw-11 sw-md-14 theme-filter" />
               <div class="position-absolute bg-foreground opacity-75 text-primary px-1 py-1 text-extra-small b-2 s-2 rounded-lg">12:20</div>
